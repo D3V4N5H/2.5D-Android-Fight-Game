@@ -1,0 +1,196 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03f9522b1b0f53b4c87d047ac5c3794f, type: 3}
+  m_Name: CounterBreaker
+  m_EditorClassIdentifier: 
+  characterPrefab: {fileID: 100100, guid: 01b0a963f13679544a22d6e63d5256c6, type: 2}
+  moveName: Counter
+  description: Counter
+  fps: 60
+  ignoreGravity: 0
+  ignoreFriction: 0
+  cancelMoveWheLanding: 0
+  forceMirror: 0
+  invertRotation: 0
+  autoCorrect: 0
+  gaugeToggle: 0
+  gaugeUsage: 0
+  gaugeGainOnMiss: 0
+  gaugeGainOnHit: 20
+  gaugeGainOnBlock: 22
+  opGaugeGainOnBlock: 0
+  opGaugeGainOnParry: 0
+  opGaugeGainOnHit: 0
+  possibleStates: 00000000
+  possibleMoveStates:
+  - possibleState: 0
+    jumpArc: 0
+    jumpArcBegins: 10
+    jumpArcEnds: 90
+    opponentDistance: 0
+    proximityRangeBegins: 0
+    proximityRangeEnds: 100
+    movingForward: 1
+    movingBack: 1
+    standBy: 1
+    blocking: 0
+    stunned: 0
+  animationClip: {fileID: 7400000, guid: 33b5f116dfe9b8340aadfd4270f60347, type: 2}
+  disableHeadLook: 1
+  wrapMode: 0
+  animationSpeed: 1
+  totalFrames: 18
+  startUpFrames: 19
+  activeFrames: -18
+  recoveryFrames: 23
+  applyRootMotion: 0
+  overrideBlendingIn: 0
+  overrideBlendingOut: 1
+  blendingIn: 0
+  blendingOut: .5
+  chargeMove: 0
+  allowInputLeniency: 0
+  leniencyBuffer: 3
+  onRelease: 0
+  onPress: 1
+  buttonSequence: 03000000
+  buttonExecution: 02000000
+  previousMoves: []
+  frameLinks:
+  - linkType: 2
+    allowBuffer: 1
+    onStrike: 1
+    onBlock: 1
+    onParry: 1
+    activeFramesBegins: 1
+    activeFramesEnds: 18
+    counterMoveType: 0
+    counterMoveFilter: {fileID: 0}
+    disableHitImpact: 1
+    anyHitStrength: 1
+    hitStrength: 0
+    anyStrokeHitBox: 1
+    hitBoxType: 0
+    anyHitType: 1
+    hitType: 0
+    ignoreInputs: 0
+    nextMoveStartupFrame: 1
+    linkableMoves:
+    - {fileID: 11400000, guid: 8d9defa77c9024c439672d309bea025a, type: 2}
+    - {fileID: 11400000, guid: 606f9b5f2f9e5314e953190dfab8352c, type: 2}
+    - {fileID: 11400000, guid: 50091ccf7790fc041b1348f8f47f9056, type: 2}
+    cancelable: 0
+    linkableMovesToggle: 1
+    hitConfirmToggle: 0
+    counterMoveToggle: 0
+  particleEffects: []
+  appliedForces:
+  - castingFrame: 5
+    resetPreviousVertical: 1
+    resetPreviousHorizontal: 0
+    force: {x: 0, y: 60}
+    casted: 0
+  slowMoEffects: []
+  opponentOverride: []
+  soundEffects:
+  - castingFrame: 0
+    sound: {fileID: 0}
+    sounds:
+    - {fileID: 8300000, guid: 39d76ba6a2543ff41856aa268742818f, type: 3}
+    soundEffectsToggle: 0
+    casted: 0
+  inGameAlert: []
+  cameraMovements: []
+  hits: []
+  blockableArea:
+    activeFramesBegin: 14
+    activeFramesEnds: 52
+    bodyPart: 2
+    radius: 6
+    offSet: {x: 0, y: 0}
+    position: {x: 0, y: 0, z: 0}
+  invincibleBodyParts: []
+  armorOptions:
+    activeFramesBegin: 0
+    activeFramesEnds: 0
+    overrideHitEffects: 0
+    hitEffects:
+      hitParticle: {fileID: 0}
+      killTime: 0
+      hitSound: {fileID: 0}
+      freezingTime: 0
+      animationSpeed: .100000001
+      shakeCharacterOnHit: 1
+      shakeCameraOnHit: 1
+      shakeDensity: .800000012
+      editorToggle: 0
+    hitAbsorption: 0
+    damageAbsorption: 0
+    nonAffectedBodyParts: 
+  projectiles: []
+  opponentConditions:
+    basicMoveLimitation: 
+    possibleMoveStates: []
+    basicMovesToggle: 0
+    statesToggle: 0
+  selfConditions:
+    basicMoveLimitation: 
+    possibleMoveStates:
+    - possibleState: 0
+      jumpArc: 0
+      jumpArcBegins: 0
+      jumpArcEnds: 100
+      opponentDistance: 0
+      proximityRangeBegins: 0
+      proximityRangeEnds: 100
+      movingForward: 1
+      movingBack: 1
+      standBy: 1
+      blocking: 0
+      stunned: 0
+    - possibleState: 1
+      jumpArc: 0
+      jumpArcBegins: 0
+      jumpArcEnds: 100
+      opponentDistance: 0
+      proximityRangeBegins: 0
+      proximityRangeEnds: 100
+      movingForward: 1
+      movingBack: 1
+      standBy: 1
+      blocking: 0
+      stunned: 0
+    basicMovesToggle: 0
+    statesToggle: 1
+  moveClassification:
+    attackType: 0
+    hitType: 0
+    startupSpeed: 0
+    recoverySpeed: 0
+    hitConfirmType: 0
+    preferableDistance: 0
+    gaugeUsage: 0
+    anyAttackType: 1
+    anyHitType: 1
+    anyHitConfirmType: 1
+  changeCombatStance: 0
+  cancelable: 0
+  kill: 0
+  currentFrame: 0
+  overrideStartupFrame: 0
+  animationSpeedTemp: 1
+  currentTick: 0
+  hitConfirmOnBlock: 0
+  hitConfirmOnParry: 0
+  hitConfirmOnStrike: 0
+  hitAnimationOverride: 0
+  standUpOptions: 0
+  currentFrameData: 0

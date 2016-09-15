@@ -1,0 +1,145 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03f9522b1b0f53b4c87d047ac5c3794f, type: 3}
+  m_Name: DashBack
+  m_EditorClassIdentifier: 
+  characterPrefab: {fileID: 100104, guid: 00742ea973dc1914b9364529ba316ee2, type: 2}
+  moveName: Dash Back
+  description: Dash Back
+  fps: 60
+  ignoreGravity: 0
+  ignoreFriction: 0
+  cancelMoveWheLanding: 1
+  forceMirror: 0
+  invertRotation: 0
+  autoCorrectRotation: 0
+  frameWindowRotation: 0
+  gaugeToggle: 0
+  gaugeUsage: 0
+  gaugeGainOnMiss: 0
+  gaugeGainOnHit: 2
+  gaugeGainOnBlock: 0
+  opGaugeGainOnBlock: 0
+  opGaugeGainOnParry: 0
+  opGaugeGainOnHit: 0
+  possibleStates: 00000000
+  possibleMoveStates: []
+  animationClip: {fileID: 7400000, guid: 43b4af0f51fef6c47af3a739b67523dd, type: 2}
+  disableHeadLook: 1
+  wrapMode: 4
+  animationSpeed: 1
+  totalFrames: 29
+  startUpFrames: 5
+  activeFrames: 5
+  recoveryFrames: 5
+  applyRootMotion: 0
+  overrideBlendingIn: 1
+  overrideBlendingOut: 0
+  blendingIn: 0
+  blendingOut: 0
+  chargeMove: 0
+  chargeTiming: .699999988
+  allowInputLeniency: 0
+  leniencyBuffer: 3
+  onReleaseExecution: 0
+  onPressExecution: 1
+  buttonSequence: 01000000
+  buttonExecution: 01000000
+  previousMoves: []
+  frameLinks: []
+  particleEffects: []
+  appliedForces:
+  - castingFrame: 8
+    resetPreviousVertical: 1
+    resetPreviousHorizontal: 1
+    force: {x: -20, y: 8}
+    casted: 0
+  slowMoEffects: []
+  opponentOverride: []
+  soundEffects:
+  - castingFrame: 0
+    sound: {fileID: 0}
+    sounds:
+    - {fileID: 8300000, guid: e49eb8fd2bdc27b49905d2c8c91c5058, type: 3}
+    soundEffectsToggle: 0
+    casted: 0
+  inGameAlert: []
+  stanceChanges: []
+  cameraMovements: []
+  hits: []
+  blockableArea:
+    activeFramesBegin: 1
+    activeFramesEnds: 2
+    bodyPart: 0
+    shape: 0
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 4
+      height: 4
+    followXBounds: 0
+    followYBounds: 0
+    radius: 0
+    offSet: {x: 0, y: 0}
+    position: {x: 0, y: 0, z: 0}
+  invincibleBodyParts: []
+  armorOptions:
+    activeFramesBegin: 0
+    activeFramesEnds: 0
+    overrideHitEffects: 0
+    hitEffects:
+      hitParticle: {fileID: 0}
+      killTime: 0
+      hitSound: {fileID: 0}
+      freezingTime: 0
+      animationSpeed: .100000001
+      shakeCharacterOnHit: 1
+      shakeCameraOnHit: 1
+      shakeDensity: .800000012
+      editorToggle: 0
+    hitAbsorption: 0
+    damageAbsorption: 0
+    nonAffectedBodyParts: 
+  projectiles: []
+  opponentConditions:
+    basicMoveLimitation: 
+    possibleMoveStates: []
+    basicMovesToggle: 0
+    statesToggle: 0
+  selfConditions:
+    basicMoveLimitation: 
+    possibleMoveStates:
+    - possibleState: 0
+      jumpArc: 0
+      jumpArcBegins: 0
+      jumpArcEnds: 100
+      opponentDistance: 0
+      proximityRangeBegins: 0
+      proximityRangeEnds: 100
+      movingForward: 1
+      movingBack: 1
+      standBy: 1
+      blocking: 0
+      stunned: 0
+    basicMovesToggle: 0
+    statesToggle: 1
+  moveClassification:
+    attackType: 3
+    hitType: 0
+    startupSpeed: 0
+    recoverySpeed: 0
+    hitConfirmType: 0
+    preferableDistance: 1
+    gaugeUsage: 0
+    anyAttackType: 1
+    anyHitType: 1
+    anyHitConfirmType: 1

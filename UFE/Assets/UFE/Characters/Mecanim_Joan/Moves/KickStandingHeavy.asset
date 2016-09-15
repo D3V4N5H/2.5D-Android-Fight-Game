@@ -1,0 +1,268 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03f9522b1b0f53b4c87d047ac5c3794f, type: 3}
+  m_Name: KickStandingHeavy
+  m_EditorClassIdentifier: 
+  characterPrefab: {fileID: 100052, guid: ceeaecc0393d0fb438fde5457a24ead6, type: 2}
+  moveName: Heavy Kick
+  description: Heavy Kick
+  fps: 60
+  ignoreGravity: 0
+  ignoreFriction: 0
+  cancelMoveWheLanding: 0
+  forceMirror: 0
+  invertRotation: 0
+  autoCorrectRotation: 0
+  frameWindowRotation: 0
+  gaugeToggle: 0
+  gaugeUsage: 0
+  gaugeGainOnMiss: 0
+  gaugeGainOnHit: 60
+  gaugeGainOnBlock: 66
+  opGaugeGainOnBlock: 0
+  opGaugeGainOnParry: 0
+  opGaugeGainOnHit: 0
+  possibleStates: 00000000
+  possibleMoveStates: []
+  animationClip: {fileID: 7400000, guid: e403e944efd80d044993d9983a7ad830, type: 3}
+  disableHeadLook: 1
+  wrapMode: 0
+  animationSpeed: .850000024
+  totalFrames: 32
+  startUpFrames: 14
+  activeFrames: 3
+  recoveryFrames: 15
+  applyRootMotion: 0
+  rootMotionNode: 0
+  overrideBlendingIn: 1
+  overrideBlendingOut: 0
+  blendingIn: 0
+  blendingOut: 0
+  chargeMove: 0
+  chargeTiming: .699999988
+  allowInputLeniency: 0
+  leniencyBuffer: 3
+  onReleaseExecution: 0
+  onPressExecution: 1
+  buttonSequence: 
+  buttonExecution: 09000000
+  previousMoves: []
+  frameLinks:
+  - linkType: 0
+    allowBuffer: 1
+    onStrike: 1
+    onBlock: 1
+    onParry: 1
+    activeFramesBegins: 20
+    activeFramesEnds: 27
+    counterMoveType: 0
+    counterMoveFilter: {fileID: 0}
+    disableHitImpact: 1
+    anyHitStrength: 1
+    hitStrength: 0
+    anyStrokeHitBox: 1
+    hitBoxType: 0
+    anyHitType: 1
+    hitType: 0
+    ignoreInputs: 0
+    ignorePlayerConditions: 0
+    nextMoveStartupFrame: 1
+    linkableMoves:
+    - {fileID: 11400000, guid: a1dcede3ea039844a952770ab0eb3427, type: 2}
+    cancelable: 0
+    linkableMovesToggle: 1
+    hitConfirmToggle: 0
+    counterMoveToggle: 0
+  particleEffects: []
+  appliedForces: []
+  slowMoEffects: []
+  opponentOverride: []
+  soundEffects:
+  - castingFrame: 0
+    sound: {fileID: 0}
+    sounds:
+    - {fileID: 8300000, guid: c1fc60cc54dfe0c42bad64d9a9046926, type: 3}
+    soundEffectsToggle: 0
+  inGameAlert: []
+  stanceChanges: []
+  cameraMovements: []
+  hits:
+  - activeFramesBegin: 15
+    activeFramesEnds: 18
+    hitConfirmType: 0
+    throwMove: {fileID: 0}
+    techMove: {fileID: 0}
+    techable: 1
+    armorBreaker: 0
+    continuousHit: 0
+    spaceBetweenHits: 0
+    groundHit: 1
+    airHit: 1
+    stunHit: 1
+    downHit: 0
+    resetPreviousHitStun: 1
+    cornerPush: 1
+    overrideHitEffects: 0
+    hitEffects:
+      hitParticle: {fileID: 0}
+      killTime: 0
+      hitSound: {fileID: 0}
+      freezingTime: 0
+      animationSpeed: .100000001
+      shakeCharacterOnHit: 1
+      shakeCameraOnHit: 1
+      shakeDensity: .800000012
+      editorToggle: 0
+    hitStrength: 2
+    hitStunType: 1
+    hitStunOnHit: 50
+    hitStunOnBlock: 10
+    frameAdvantageOnHit: 0
+    frameAdvantageOnBlock: 0
+    damageScaling: 1
+    damageType: 1
+    damageOnHit: 110
+    damageOnBlock: 0
+    doesntKill: 0
+    hitType: 0
+    resetPreviousHorizontalPush: 1
+    resetPreviousVerticalPush: 1
+    pushForce: {x: 24, y: 0}
+    resetPreviousHorizontal: 0
+    resetPreviousVertical: 0
+    appliedForce: {x: 0, y: 0}
+    hurtBoxes:
+    - bodyPart: 15
+      shape: 0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 4
+        height: 4
+      followXBounds: 0
+      followYBounds: 0
+      radius: .800000012
+      offSet: {x: 0, y: 0}
+    - bodyPart: 13
+      shape: 0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 4
+        height: 4
+      followXBounds: 0
+      followYBounds: 0
+      radius: .899999976
+      offSet: {x: 0, y: 0}
+    - bodyPart: 11
+      shape: 0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 4
+        height: 4
+      followXBounds: 0
+      followYBounds: 0
+      radius: .899999976
+      offSet: {x: 0, y: 0}
+    pullEnemyIn:
+      speed: 50
+      forceStand: 1
+      characterBodyPart: 0
+      enemyBodyPart: 0
+      targetDistance: .5
+      position: {x: 0, y: 0, z: 0}
+    pullSelfIn:
+      speed: 50
+      forceStand: 1
+      characterBodyPart: 0
+      enemyBodyPart: 0
+      targetDistance: .5
+      position: {x: 0, y: 0, z: 0}
+    hasHit: 0
+    disabled: 0
+    damageOptionsToggle: 1
+    hitStunOptionsToggle: 1
+    forceOptionsToggle: 1
+    hitConditionsToggle: 0
+    pullInToggle: 0
+    hurtBoxesToggle: 0
+  blockableArea:
+    activeFramesBegin: 15
+    activeFramesEnds: 18
+    bodyPart: 2
+    shape: 0
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 4
+      height: 4
+    followXBounds: 0
+    followYBounds: 0
+    radius: 6
+    offSet: {x: 0, y: 0}
+    position: {x: 0, y: 0, z: 0}
+  invincibleBodyParts: []
+  armorOptions:
+    activeFramesBegin: 0
+    activeFramesEnds: 0
+    overrideHitEffects: 0
+    hitEffects:
+      hitParticle: {fileID: 0}
+      killTime: 0
+      hitSound: {fileID: 0}
+      freezingTime: 0
+      animationSpeed: .100000001
+      shakeCharacterOnHit: 1
+      shakeCameraOnHit: 1
+      shakeDensity: .800000012
+      editorToggle: 0
+    hitAbsorption: 0
+    damageAbsorption: 0
+    nonAffectedBodyParts: 
+  projectiles: []
+  opponentConditions:
+    basicMoveLimitation: 
+    possibleMoveStates: []
+    basicMovesToggle: 0
+    statesToggle: 0
+  selfConditions:
+    basicMoveLimitation: 
+    possibleMoveStates:
+    - possibleState: 0
+      jumpArc: 0
+      jumpArcBegins: 0
+      jumpArcEnds: 100
+      opponentDistance: 0
+      proximityRangeBegins: 0
+      proximityRangeEnds: 100
+      movingForward: 1
+      movingBack: 1
+      standBy: 1
+      blocking: 0
+      stunned: 0
+    basicMovesToggle: 0
+    statesToggle: 1
+  moveClassification:
+    attackType: 1
+    hitType: 0
+    startupSpeed: 2
+    recoverySpeed: 2
+    hitConfirmType: 0
+    preferableDistance: 2
+    gaugeUsage: 0
+    anyAttackType: 1
+    anyHitType: 1
+    anyHitConfirmType: 1

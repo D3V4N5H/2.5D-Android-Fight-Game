@@ -1,0 +1,162 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03f9522b1b0f53b4c87d047ac5c3794f, type: 3}
+  m_Name: Outro
+  m_EditorClassIdentifier: 
+  characterPrefab: {fileID: 100104, guid: 00742ea973dc1914b9364529ba316ee2, type: 2}
+  moveName: Outro
+  description: Outro
+  fps: 60
+  ignoreGravity: 0
+  ignoreFriction: 0
+  cancelMoveWheLanding: 0
+  forceMirror: 0
+  invertRotation: 0
+  autoCorrectRotation: 0
+  frameWindowRotation: 0
+  gaugeToggle: 0
+  gaugeUsage: 0
+  gaugeGainOnMiss: 0
+  gaugeGainOnHit: 0
+  gaugeGainOnBlock: 0
+  opGaugeGainOnBlock: 0
+  opGaugeGainOnParry: 0
+  opGaugeGainOnHit: 0
+  possibleStates: 
+  possibleMoveStates: []
+  animationClip: {fileID: 7400002, guid: 8409b806755a09e408a34b9f83e7f5ad, type: 3}
+  disableHeadLook: 1
+  wrapMode: 8
+  animationSpeed: 1
+  totalFrames: 17
+  startUpFrames: 5
+  activeFrames: 5
+  recoveryFrames: 5
+  applyRootMotion: 0
+  rootMotionNode: 0
+  overrideBlendingIn: 1
+  overrideBlendingOut: 1
+  blendingIn: 0
+  blendingOut: 0
+  chargeMove: 0
+  chargeTiming: .699999988
+  allowInputLeniency: 0
+  leniencyBuffer: 3
+  onReleaseExecution: 0
+  onPressExecution: 1
+  buttonSequence: 
+  buttonExecution: 
+  previousMoves: []
+  frameLinks: []
+  particleEffects: []
+  appliedForces: []
+  slowMoEffects: []
+  opponentOverride: []
+  soundEffects:
+  - castingFrame: 5
+    sound: {fileID: 0}
+    sounds:
+    - {fileID: 8300000, guid: c1fc60cc54dfe0c42bad64d9a9046926, type: 3}
+    soundEffectsToggle: 0
+  inGameAlert: []
+  stanceChanges: []
+  cameraMovements:
+  - cinematicType: 0
+    animationClip: {fileID: 0}
+    prefab: {fileID: 0}
+    camAnimationSpeed: 1
+    blendSpeed: 100
+    gameObjectPosition: {x: 0, y: 0, z: 0}
+    position: {x: 30.0810375, y: 9.70673752, z: -17.9700489}
+    rotation: {x: 7.00000095, y: 300.730011, z: 0}
+    castingFrame: 12
+    duration: 999
+    fieldOfView: 4
+    camSpeed: 2
+    freezePhysics: 0
+    myAnimationSpeed: 0
+    opAnimationSpeed: 100
+    previewToggle: 0
+    startTime: 0
+  - cinematicType: 0
+    animationClip: {fileID: 0}
+    prefab: {fileID: 0}
+    camAnimationSpeed: 1
+    blendSpeed: 100
+    gameObjectPosition: {x: 0, y: 0, z: 0}
+    position: {x: 30.0810394, y: 9.70673847, z: -17.9700508}
+    rotation: {x: 7, y: 301.840027, z: 0}
+    castingFrame: 3
+    duration: .600000024
+    fieldOfView: 6
+    camSpeed: 2
+    freezePhysics: 0
+    myAnimationSpeed: 100
+    opAnimationSpeed: 100
+    previewToggle: 0
+    startTime: 0
+  hits: []
+  blockableArea:
+    activeFramesBegin: 0
+    activeFramesEnds: 0
+    bodyPart: 0
+    shape: 0
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 4
+      height: 4
+    followXBounds: 0
+    followYBounds: 0
+    radius: 0
+    offSet: {x: 0, y: 0}
+    position: {x: 0, y: 0, z: 0}
+  invincibleBodyParts: []
+  armorOptions:
+    activeFramesBegin: 0
+    activeFramesEnds: 0
+    overrideHitEffects: 0
+    hitEffects:
+      hitParticle: {fileID: 0}
+      killTime: 0
+      hitSound: {fileID: 0}
+      freezingTime: 0
+      animationSpeed: .100000001
+      shakeCharacterOnHit: 1
+      shakeCameraOnHit: 1
+      shakeDensity: .800000012
+      editorToggle: 0
+    hitAbsorption: 0
+    damageAbsorption: 0
+    nonAffectedBodyParts: 
+  projectiles: []
+  opponentConditions:
+    basicMoveLimitation: 
+    possibleMoveStates: []
+    basicMovesToggle: 0
+    statesToggle: 0
+  selfConditions:
+    basicMoveLimitation: 
+    possibleMoveStates: []
+    basicMovesToggle: 0
+    statesToggle: 0
+  moveClassification:
+    attackType: 0
+    hitType: 0
+    startupSpeed: 0
+    recoverySpeed: 0
+    hitConfirmType: 0
+    preferableDistance: 0
+    gaugeUsage: 0
+    anyAttackType: 1
+    anyHitType: 1
+    anyHitConfirmType: 1
